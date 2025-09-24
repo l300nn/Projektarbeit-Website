@@ -1,0 +1,63 @@
+body {
+    background-image: url(../../bilder/woodland.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#logoheader {
+    height: 200px;
+    width: 200px;
+    border: solid black 5px;
+    border-radius: 10px;
+}
+
+nav {
+    font: 36px merriweather;
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+    nav details {
+        display: inline-block;
+        position: relative;
+        min-width: 0;
+        border: solid 5px black;
+        border-radius: 10px;
+        background-color: #A69677;
+    }
+        nav details > summary {
+            list-style: none;
+            cursor: pointer;
+            padding: 8px 12px;
+            border-radius: 6px;
+            background-color: #4A5946;
+            color: white;
+            user-select: none;
+        }    
+
+        nav li {
+            font: 26px merriweather;
+            background-color: #3C403F;
+            border: solid 2px black;
+            border-radius: 5px;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+            nav a:hover {
+                color: #4A5946;
+                text-decoration: underline;
+            }
+
+            nav a:link {
+                color: #A69677;
+                text-decoration: none;
+            }
+
+            nav a:visited {
+                color: white;
+                text-decoration: wavy;
+            }
+
