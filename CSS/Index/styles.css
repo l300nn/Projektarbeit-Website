@@ -61,3 +61,29 @@ nav {
                 text-decoration: wavy;
             }
 
+
+
+
+
+#Produktvorschau {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    border: solid black 5px;
+    
+}
+
+    #Produktvorschau img {
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }   
+
+#dropdownmenu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
