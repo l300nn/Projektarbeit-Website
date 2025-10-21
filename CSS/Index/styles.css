@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
 body {
     background-image: url(../../bilder/woodland.png);
     background-size: cover;
     background-position: center;
+    font-family: "Merriweather", serif
 }
 
 #logoheader {
@@ -12,7 +15,7 @@ body {
 }
 
 nav {
-    font: 36px merriweather;
+    font: 32px merriweather;
     display: flex;
     gap: 0.8rem;
     align-items: flex-start;
