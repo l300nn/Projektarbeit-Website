@@ -28,6 +28,7 @@ nav {
         background-color: #A69677;
         width:250px;
     }
+
         nav details > summary {
             list-style: none;
             cursor: pointer;
@@ -98,11 +99,27 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
+
 }
 
     button:hover {
         background-color: #4A5946;
     }
+
+    #button-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 2px;
+    }
+        #button-container button {
+            flex: 1 1 100px; 
+            max-width: 250px; 
+            padding: 12px 20px;
+            font-size: 18px;
+
+        }
 
 
 @media (max-width: 768px) {
@@ -110,12 +127,35 @@ button {
         font-size: 25px;
     }
 
-    nav details {
-        width: 170px;
+    nav details{
+        width: 165px;
+    }
+    #logoheader {
+        height: 150px;
+        width: 150px;
+    }
+
+    #button-container button {
+        flex: 1 1 75px;
+        max-width: 100px;
+        padding: 10px 10px;
+        font-size: 16px;
     }
 }
 @media (max-width: 480px) {
     * {
         font-size: 20px;
+    }
+
+    #logoheader {
+        height: 100px;
+        width: 100px;
+    }
+
+    #button-container button {
+        flex: 1 1 50px; 
+        max-width: 75px; 
+        padding: 10px 10px;
+        font-size: 12px;
     }
 }
