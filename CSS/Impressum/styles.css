@@ -42,7 +42,7 @@ h2 {
     color: #0056b3;
     font-size: 1.5rem;
     margin-top: 2rem;
-    border-left: 4px solid #007bff;
+    border-left: 4px solid #4A5946;
     padding-left: 10px;
 }
 
@@ -123,7 +123,7 @@ header {
     color: #ffffff;
     text-align: center;
     padding: 2rem 1rem;
-    border-bottom: 4px solid #007bff;
+    border-bottom: 8px solid #4A5946;
 }
 
     header h1 {
@@ -147,7 +147,7 @@ h2 {
     color: whitesmoke;
     font-size: 1.4rem;
     margin-top: 1.8rem;
-    border-left: 4px solid #007bff;
+    border-left: 4px solid #4A5946;
     padding-left: 10px;
     font-family: 'Merriweather', serif;
 }
