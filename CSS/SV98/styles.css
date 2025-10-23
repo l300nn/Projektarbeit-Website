@@ -1,4 +1,7 @@
-footer {
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+footer { /*Verschiedene Eigenschaften des Footers wie Farbe, Schrift etc*/
     background-color: #0a0a0a;
     color: #fff;
     text-align: center;
@@ -8,14 +11,52 @@ footer {
     margin-top: auto;
 }
 
-    footer a {
+    footer a { /*Farbe der Anchor Elemente*/
         color: #007bff;
         text-decoration: none;
         margin: 0 5px;
         transition: color 0.2s;
     }
 
-        footer a:hover {
+        footer a:hover { /*Definiert den Farbwechsel beim "hovern"*/
             color: #0056b3;
             text-decoration: underline;
         }
+
+body {
+    background-image: url(../../bilder/woodland.png); /*Hintergrundbild der Seite*/
+    background-size: cover;
+    background-position: center;
+}
+
+p {
+    font-family: "Lato", sans-serif; /*Schriftart der P Elemente zusätzlich Grösse etc*/
+    line-height: 1,5px;
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+h1 {
+    font-family: "Merriweather", serif; /*Schriftart, Schriftgrösse und Farbe der h1 elemente*/
+    font-size: 36px;
+    color: whitesmoke;
+}
+
+h2 {
+    font-family: "Merriweather", serif; /*Schriftart, Schriftgrösse und Farbe der h2 elemente*/
+    font-size: 28px;
+    color: whitesmoke;
+}
+
+.bilder {
+    width: 100%;
+    max-width: 450px;
+}
+    /*Sorgt für skalierende Bilder*/
+
+    .bilder img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+

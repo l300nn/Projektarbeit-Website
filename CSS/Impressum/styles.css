@@ -1,31 +1,32 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
-body {
+body { /*Bestimmt Schrift, Schriftabstand, Hintergrund*/
     font-family: 'Lato', sans-serif;
-    color: #222;
-    background-color: #f8f9fa;
+    color: #0a0a0a;
     margin: 0;
     padding: 0;
-    line-height: 1.7;
+    line-height: 1.5;
+    background-image: url(../../bilder/woodland.png);
 }
 
-p {
+p { /*Bestimmt die Schrift des P Elements*/
     font-family: 'Lato', sans-serif;
 }
 
-header {
+header { /*Hintergrund des Headers und die Borderdicke unf Farbe*/
     background-color: #0a0a0a;
     color: #ffffff;
     text-align: center;
     padding: 2rem 1rem;
-    border-bottom: 4px solid #007bff;
+    border-bottom: 4px solid #4A5946;
 }
 
-    header h1 {
+    header h1 { /*Schrift, Grösse usw des Headers*/
         margin: 0;
         font-family: 'Merriweather', serif;
-        font-size: 2.4rem;
+        font-size: 36px;
         letter-spacing: 1px;
         text-transform: uppercase;
     }
@@ -37,36 +38,35 @@ body > p {
     padding: 0 20px;
 }
 
-h2 {
-    font-family: 'Merriweather', serif;
-    color: #0056b3;
-    font-size: 1.5rem;
-    margin-top: 2rem;
+h2 { /*Grösse, Schrift usw des H2 Elements*/
+    color: whitesmoke;
+    font-size: 1.4rem;
+    margin-top: 1.8rem;
     border-left: 4px solid #4A5946;
     padding-left: 10px;
+    font-family: 'Merriweather', serif;
+
 }
 
-p {
-    font-size: 1.05rem;
+p { /*Hintergrund des P Elements inkl Schriftgrösse*/
+    font-size: 16px;
     margin-top: 0.5rem;
     background: #ffffff;
     padding: 1rem 1.2rem;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    font-family: "Lato", sans-serif;
 }
 
 
-a {
+a { /*Design des Anchor Elements*/
     color: #007bff;
     text-decoration: none;
     word-break: break-all;
     transition: color 0.2s;
 }
 
-    a:hover {
-        text-decoration: underline;
-        color: #0056b3;
-    }
+
 
 
 footer {
@@ -75,7 +75,7 @@ footer {
     text-align: center;
     padding: 25px 15px;
     font-family: 'Lato', sans-serif;
-    font-size: 0.9rem;
+    font-size: 16px;
     margin-top: auto;
 }
 
@@ -93,98 +93,12 @@ footer {
 
 @media (max-width: 700px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 32px;
     }
 
     h2 {
-        font-size: 1.25rem;
+        font-size: 26px;
     }
 
-    p {
-        font-size: 0.95rem;
-        padding: 0.8rem 1rem;
-    }
-}
-
-
-
-body {
-    font-family: "Lato", sans-serif;
-    color: #222;
-    background-image: url(../../bilder/woodland.png);
-    margin: 0;
-    padding: 0;
-    line-height: 1.7;
-}
-
-
-header {
-    background-color: #0a0a0a;
-    color: #ffffff;
-    text-align: center;
-    padding: 2rem 1rem;
-    border-bottom: 8px solid #4A5946;
-}
-
-    header h1 {
-        margin: 0;
-        font-size: 2.2rem;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        font-family: "Merriweather", sans-serif;
-    }
-
-
-body > h2,
-body > p {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
-
-h2 {
-    color: whitesmoke;
-    font-size: 1.4rem;
-    margin-top: 1.8rem;
-    border-left: 4px solid #4A5946;
-    padding-left: 10px;
-    font-family: 'Merriweather', serif;
-}
-
-
-p {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-    background: #ffffff;
-    padding: 1rem 1.2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-
-a {
-    color: #007bff;
-    text-decoration: none;
-    word-break: break-all;
-}
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-
-@media (max-width: 700px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.2rem;
-    }
-
-    p {
-        font-size: 0.95rem;
-        padding: 0.8rem 1rem;
-    }
+    
 }

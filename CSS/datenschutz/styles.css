@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+body { /*Hintergrundbild der Seite*/
+    background-image: url(../../bilder/woodland.png);
+    background-size: cover;
+    background-position: center;
+}
+
+p { /*Schriftart der P Elemente zusätzlich Grösse etc*/
+    font-family: "Lato", sans-serif;
+    line-height: 1,5px;
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+h1 { /*Schriftart, Schriftgrösse und Farbe der h1 elemente*/
+    font-family: "Merriweather", serif;
+    font-size: 36px;
+    color: whitesmoke;
+}
+
+h2 { /*Schriftart, Schriftgrösse und Farbe der h2 elemente*/
+    font-family: "Merriweather", serif;
+    font-size: 28px;
+    color: whitesmoke;
+}
+
+li {
+    color: whitesmoke;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}
+
 footer {
     background-color: #0a0a0a;
     color: #fff;

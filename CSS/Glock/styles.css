@@ -1,10 +1,38 @@
-body {
-    background-image: url(../../bilder/woodland.png);
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+body { /*Hintergrundbild der Seite*/
+    background-image: url(../../bilder/woodland.png); 
     background-size: cover;
     background-position: center;
 }
 
-footer {
+p { /*Schriftart der P Elemente zusätzlich Grösse etc*/
+    font-family: "Lato", sans-serif;
+    line-height: 1,5px;
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+h1 { /*Schriftart, Schriftgrösse und Farbe der h1 elemente*/
+    font-family: "Merriweather", serif;
+    font-size: 36px;
+    color: whitesmoke;
+}
+
+h2 { /*Schriftart, Schriftgrösse und Farbe der h2 elemente*/
+    font-family: "Merriweather", serif;
+    font-size: 28px;
+    color: whitesmoke;
+}
+
+table { /*Definiert Schrift,Farbe und Grösse der Infotabelle*/
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+footer { /*Verschiedene Eigenschaften des Footers wie Farbe, Schrift etc*/
     text-align: center;
     padding: 1.5rem;
     background: #0a0a0a;
@@ -12,10 +40,23 @@ footer {
     margin-top: 3rem;
 }
 
-    footer a {
+    footer a { /*Farbe der Anchor Elemente*/
         color: #007bff;
     }
 
-        footer a:hover {
+        footer a:hover { /*Definiert den Farbwechsel beim "hovern"*/
             text-decoration: underline;
         }
+
+
+.bilder { 
+    width: 100%;
+    max-width: 500px;  
+}
+                        /*Sorgt für skalierende Bilder*/                        
+
+    .bilder img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
