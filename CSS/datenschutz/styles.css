@@ -9,7 +9,7 @@ body { /*Hintergrundbild der Seite*/
 
 p { /*Schriftart der P Elemente zusätzlich Grösse etc*/
     font-family: "Lato", sans-serif;
-    line-height: 1,5px;
+    line-height: 1.5px;
     font-size: 16px;
     color: whitesmoke;
 }

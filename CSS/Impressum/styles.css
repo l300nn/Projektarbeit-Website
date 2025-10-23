@@ -32,7 +32,7 @@ header { /*Hintergrund des Headers und die Borderdicke unf Farbe*/
     }
 
 body > h2,
-body > p {
+body > p { /*Breite der Child Elements*/
     max-width: 900px;
     margin: 20px auto;
     padding: 0 20px;
