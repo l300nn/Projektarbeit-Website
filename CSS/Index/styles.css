@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap'); /*Import der Lato Schrift*/
 
 body {
-    background-image: url(../../bilder/woodland.png);
+    background-image: url(../../bilder/woodland.png); /*Hintergrundbild, ein Tarnmustermotiv*/
     background-size: cover;
     background-position: center;
-    font-family: "Merriweather", serif
+    font-family: "Merriweather", serif; /*Setzt die Standardschriftart auf Merriweather*/
 }
 
-#logoheader {
+#logoheader { /*Bestimmt die Grösse und Eigenschaften des Logos.*/
     height: 200px;
     width: 200px;
     border: solid black 5px;
@@ -15,14 +15,14 @@ body {
 }
 
 nav {
-    font: 32px merriweather;
+    font: 32px merriweather; /*Setzt die Schriftart und Grösse der Navigationsleiste*/
     display: flex;
     gap: 0.8rem;
     align-items: flex-start;
     padding: 1rem;
 }
 
-    nav details {
+    nav details {   /*Bestimmt die Eigenschaften des Dropdownmenu buttons*/
         display: inline-block;
         position: relative;
         min-width: 0;
@@ -32,7 +32,7 @@ nav {
         width:250px;
     }
 
-        nav details > summary {
+        nav details > summary { /*Bestimmt die Eigenschaften des Dropdownmenu und deren Inhalten im Button*/
             list-style: none;
             cursor: pointer;
             padding: 8px 12px;
@@ -40,9 +40,9 @@ nav {
             background-color: #4A5946;
             color: white;
             user-select: none;
-        }    
+        }
 
-        nav li {
+        nav li { /*Bestimmt die Eigenschaften der Listeneinträge im Dropdownmenu*/
             font: 26px merriweather;
             background-color: #3C403F;
             border: solid 2px black;
@@ -51,17 +51,17 @@ nav {
             margin-right: 20px;
         }
 
-            nav a:hover {
+            nav a:hover { /*Farbe und Textdekoration beim hoveren über den Text*/
                 color: #4A5946;
                 text-decoration: underline;
             }
 
-            nav a:link {
+            nav a:link { /*Farbe und Textdekoration der Links*/
                 color: #A69677;
                 text-decoration: none;
             }
 
-            nav a:visited {
+            nav a:visited { /*Farbe und Textdekoration der besuchten Links*/
                 color: white;
                 text-decoration: wavy;
             }
@@ -70,18 +70,17 @@ nav {
 
 
 
-#Produktvorschau {
+#Produktvorschau { /*Bestimmt die Eigenschaften des Produktvorschau Bereichs*/
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     padding: 20px;
     border: solid black 5px;
-    
 }
 
-    #Produktvorschau img {
-        flex: 1 1 calc(33.33% - 20px);
+    #Produktvorschau img { /*Skaliert die Bilder wenn der Bildschirm kleiner wird.*/
+        flex: 1 1 calc(33.33% - 20px); /*Bild startet mit der Grösse eines Drittels des Containers kann aber wachsen und schrumpfen je nach Bildschirmgrösse.*/
         max-width: 100%;
         height: auto;
         display: block;
@@ -93,7 +92,7 @@ nav {
     gap: 10px;
 }
 
-button {
+button { /*Link-Buttons und seine Eigenschaften*/
     padding: 10px 20px;
     background-color: #A69677;
     color: white;
@@ -105,11 +104,11 @@ button {
 
 }
 
-    button:hover {
+    button:hover { /*Wechseldene Farbe beim hovern über dem Button*/
         background-color: #4A5946;
     }
 
-    #button-container {
+    #button-container { /*Responsive Eigenschaften für die Buttons*/
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -121,11 +120,11 @@ button {
             max-width: 250px;
             padding: 12px 20px;
             font-size: 18px;
-            font-family: "Merriweather", serif
+            font-family: "Merriweather", serif; /*Schriftarten*/
         }
 
 
-footer {
+footer { /*Darstellung des Footers*/
     background-color: #0a0a0a;
     color: #fff;
     text-align: center;
@@ -148,16 +147,10 @@ footer {
         }
 
 
-@media (max-width: 500px) {
-    footer {
-        font-size: 0.8rem;
-        padding: 20px 10px;
-    }
-}
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*Responsive Design für grosse Bildschirme*/
     * {
         font-size: 15px;
     }
@@ -177,7 +170,13 @@ footer {
         font-size: 16px;
     }
 }
-@media (max-width: 480px) {
+
+.buttons {
+    display: flex;
+    justify-content:space-between;
+}
+
+@media (max-width: 480px) { /*Responsive Design für sehr kleine Bildschirme*/
     * {
         font-size: 10px;
     }
@@ -187,9 +186,9 @@ footer {
         width: 100px;
     }
 
-    #button-container button {
+    #button-container button { 
         flex: 1 1 50px; 
-        max-width: 75px; 
+        max-width: 80px; 
         padding: 10px 10px;
         font-size: 12px;
     }
